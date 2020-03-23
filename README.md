@@ -1,6 +1,13 @@
 
 # Context Demo
 
+## Run this demo
+First clone this repository, than run:
+```
+npm install
+npm start
+```
+
 ## Shared context state
 The DemoContext implements a react context. In this demo, the context holds a selected
 value (name) and a function to set the selected value (setName).
