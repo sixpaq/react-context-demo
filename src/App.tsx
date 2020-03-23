@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { StatusBar } from './Components/StatusBar';
+import { Button } from './Components/Button';
+import { DemoContextProvider } from './Context/DemoContext';
+
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DemoContextProvider>
+      <div className="app">
+        <div className="page-content">
+          <div className="button-bar">
+            <Button name='You have chosen: Elephant' label='Choose Elephant' />
+            <Button name='You have chosen: Lion' label='Choose Lion' />
+            <Button name='You have chosen: Rhino' label='Choose Rhino' />
+            <Button name='You have chosen: Giraf' label='Choose Giraf' />
+            <Button name='You have chosen: Leopard' label='Choose Leopard' />
+          </div>
+        </div>
+        <StatusBar />
+      </div>
+    </DemoContextProvider>
   );
 }
 

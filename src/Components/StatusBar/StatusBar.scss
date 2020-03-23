@@ -1,0 +1,14 @@
+.statusbar {
+  background-color: #ddd;
+  border-top: 1px solid #aaa;
+  min-height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #000;
+
+  .statusbar-name {
+    font-weight: bold;
+    padding: 0 15px;
+  }
+}

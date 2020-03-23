@@ -1,0 +1,30 @@
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Baloo 2;
+  font-size: 12pt;
+}
+
+#root {
+  height: 100%;
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .page-content {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .statusbar {
+      flex: 0;
+    }
+  }
+}
